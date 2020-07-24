@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* 共通部分 */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "";
+  line-height: 1.7;
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* HEADER */
+
+.logo {
+  width: 210px;
+  margin-top: 10px;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav {
+  list-style: none;
+  text-transform: uppercase;
+  font-family: 'philosopher', serif;
+  display: flex;
+  margin-top: 30px;
+}
+.main-nav li {
+  margin-left: 30px;
+}
+.main-nav a {
+color: #000;
+}
+.main-nav a:hover {
+  color: #0bd;
+}
+
+/* HOME */
+
+#home {
+  background-image: url(img/9584f5dcca272701b3c7f119adb08e5d.jpeg);
+  min-height: 100vh;
+}
+.big-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+.page-title {
+  font-size: 5rem;
+  font-family: 'philosopher', serif;
+}
+.home-content p {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+.button {
+  background: #0bd;
+  padding: 20px 40px;
+  border-radius: 5px;
+  color: white;
+}
+.button:hover {
+  background: #0090aa;
+}
+
+/* NEWS */
+
+#news {
+  background-image: url(img/36407-07.jpg);
+  height: 270px;
+  margin-bottom: 60px;
+}
+.big-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#news .page-title {
+  text-align: center;
+}
+article {
+  width: 74%;
+}
+aside {
+  width: 22%;
+}
+.news-contents {
+  display: flex;
+  justify-content: space-between;
+}
+.post-info {
+  position: relative;
+}
+.post-title {
+  font-family: 'philosopher', serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.post-date {
+  background: #0bd;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  top: 0;
+}
+.post-date span {
+  font-size: 1rem;
+  border-top: 1px #FAF7F0 solid;
+  padding-top: 10px;
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+.post-title, .post-cat {
+  margin-left: 120px;
+}
+.post-cat {
+  margin-bottom: 30px;
+}
+article img {
+  margin-bottom: 30px;
+}
+article p {
+  margin-bottom: 30px;
+}
+.sub-title {
+  font-size: 1.4rem;
+  font-family: 'philosopher', serif;
+  font-weight: normal;
+  border-bottom: 2px #0bd solid;
+  padding: 0 8px 8px;
+}
+.sub-menu {
+  list-style: none;
+  
+}
+.sub-menu li {
+  border-bottom: 1px gainsboro solid;
+  padding: 10px;
+}
+.sub-menu a {
+  color: #000;
+  display: block;
+}
+.sub-menu a:hover {
+  color: #0bd;
+}
+aside p {
+  margin-top: 30px;
+}
+footer {
+  background: #432;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+/* MENU */
+
+#menu {
+  background-image: url(img/20190909104848.jpeg);
+  height: 100vh;
+}
+#menu .page-title {
+  text-align: center;
+}
+.menu-contents {
+  max-width: 560px;
+  margin-top: 10%;
+}
+.grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+.big-box {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  object-fit: cover;
+}
+.big-box img {
+  height: 94%;
+  width: 100%;
+}
+
+/* CONTACT */
+
+#contact {
+  background-image: url(img/e56386cd5e3e4b1ed4c4f569f5815d0a.jpeg);
+  min-height: 100vh;
+}
+form div {
+  margin-bottom: 15px;
+}
+label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border:1px white solid;
+  padding: 10px;
+  border-radius: 5px;
+}
+input[type="text"],
+input[type="email"] {
+  max-width: 240px;
+  width: 100%;
+}
+textarea {
+  max-width: 480px;
+  width: 100%;
+  height: 6rem;
+}
+input[type="submit"] {
+  line-height: 1;
+}
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info {
+  width: 22%;
+}
+.location-map {
+  width: 74%;
+}
+#location {
+  padding: 4% 0;
+}
+iframe {
+  width: 100%;
+}
+.location-info p {
+  padding: 12px 10px;
+}
+#sns {
+  background: #FAF7F0;
+  padding: 4% 0;
+}
+#sns .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sns-box {
+  width: 30%;
+}
+#sns .sub-title {
+  margin-bottom: 30px;
+}
